@@ -30,7 +30,8 @@ const userSchema = new Schema({
     phoneNumber: {
         type: String,
         trim: true,
-        length: 10
+        minlength: 10,
+        maxlength: 10
     },
     country: {
         type: String,

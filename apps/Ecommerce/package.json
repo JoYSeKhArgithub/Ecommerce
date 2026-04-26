@@ -20,7 +20,12 @@
           "main": "apps/Ecommerce/src/main.ts",
           "tsConfig": "apps/Ecommerce/tsconfig.app.json",
           "assets": [
-            "apps/Ecommerce/src/assets"
+            "apps/Ecommerce/src/assets",
+            {
+              "glob": "**/*.ejs",
+              "input": "apps/Ecommerce/src/utils/sendEmail",
+              "output": "apps/Ecommerce/src/utils/sendEmail"
+            }
           ],
           "esbuildOptions": {
             "sourcemap": true,
